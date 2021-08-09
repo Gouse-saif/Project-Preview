@@ -1,0 +1,117 @@
+/* ============ TYPOGRAPHY ============ */
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/vendors/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* ============ CSS VARIABLES ============ */
+
+:root{
+
+/* ============ COLORS ============ */
+
+  --white:#fff5f5;
+  --black: #0a0909;
+  --space-cadet: #2E294E;
+  /* --text:#FFA900; */
+}
+
+/* ============ CSS RESET ============ */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* ============ Project Preview Html File Styling ============ */
+
+body{
+  background-color: var(--space-cadet);
+  font-family: Poppins;
+}
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+  place-items: center;
+}
+
+.card{
+  max-width: 350px;
+  height: 500px;
+  margin: 1rem;
+  display: grid;
+  background: rgba( 46, 41, 78, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 10px;
+}
+
+.cardImg{
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.language{
+  display: flex;
+  justify-content: space-around;
+}
+
+.language p{
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.details{
+  display: grid;
+  place-items: center;
+  color: var(--white);
+}
+.heading{
+  text-align: center;
+}
+.para{
+  padding: 10px;
+  text-align: left;
+}
+
+.previewContainer{
+  display: grid;
+  place-items: center;
+}
+
+.previewContainer a{
+  color: var(--white);
+  background: rgba( 46, 41, 78, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  padding: 5px 5rem;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,134 @@
+/* ============ TYPOGRAPHY ============ */
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/vendors/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* ============ CSS VARIABLES ============ */
+
+:root{
+
+/* ============ COLORS ============ */
+
+  --white:#fff5f5;
+  --black: #0a0909;
+  --space-cadet: #2E294E;
+  /* --text:#FFA900; */
+}
+
+/* ============ CSS RESET ============ */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+  padding: 0;
+}
+
+body{
+  line-height: 1.5;
+  background-color:var(--space-cadet);
+  min-height: 100vh;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  place-items: center;
+  margin: 2rem 0;
+  font-family: Poppins;
+  grid-row-gap: 2rem;
+}
+
+
+.glassContainer{
+  padding: 1rem;
+  width: 30rem;
+  background: rgba( 46, 41, 78, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.myPic{
+  text-align: center;
+  color: var(--white);
+}
+
+.myPic img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+  background: rgba( 46, 41, 78, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+.circle{
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--white);
+  background: rgba( 46, 41, 78, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.projectHeading{
+  line-height: 300px;
+  text-align: center;
+}
+
+footer{
+  color: var(--white);
+  text-align: center;
+}
+
+
+/* ============ MAKING RESPONSIVE  ============ */
+
+
+@media (max-width: 480px){
+
+  .glassContainer{
+    width: 21rem;
+  }
+}
+@media (max-width: 375px){
+
+  .glassContainer{
+    width: 20rem;
+  }
+}
+
+
+
